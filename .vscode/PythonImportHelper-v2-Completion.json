@@ -286,7 +286,7 @@
         "kind": 5,
         "importPath": "backend.app.main",
         "description": "backend.app.main",
-        "peekOfCode": "app = FastAPI(title=\"Agroforestry API\", version=\"0.3.0\",\n              description=\"Agroforestry planning & machine selection — proof of concept\")\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=[\"http://localhost:5173\", \"http://127.0.0.1:5173\"],\n    allow_credentials=True,\n    allow_methods=[\"*\"],\n    allow_headers=[\"*\"],\n)\nallow_origins=os.environ.get(",
+        "peekOfCode": "app = FastAPI(title=\"Agroforestry API\", version=\"0.3.0\",\n              description=\"Agroforestry planning & machine selection — proof of concept\")\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=os.environ.get(\n        \"CORS_ORIGINS\", \"http://localhost:5173,http://127.0.0.1:5173\"\n    ).split(\",\"),\n    allow_credentials=True,\n    allow_methods=[\"*\"],\n    allow_headers=[\"*\"],",
         "detail": "backend.app.main",
         "documentation": {}
     },
