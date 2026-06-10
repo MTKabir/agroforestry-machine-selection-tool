@@ -1,0 +1,428 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "JSON",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DeclarativeBase",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "joinedload",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Mapped",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "mapped_column",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "CORSMiddleware",
+        "importPath": "fastapi.middleware.cors",
+        "description": "fastapi.middleware.cors",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware.cors",
+        "documentation": {}
+    },
+    {
+        "label": "StaticFiles",
+        "importPath": "fastapi.staticfiles",
+        "description": "fastapi.staticfiles",
+        "isExtraImport": true,
+        "detail": "fastapi.staticfiles",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "ConfigDict",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 6,
+        "importPath": "backend.app.database",
+        "description": "backend.app.database",
+        "peekOfCode": "class Base(DeclarativeBase):\n    pass\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "backend.app.database",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "kind": 2,
+        "importPath": "backend.app.database",
+        "description": "backend.app.database",
+        "peekOfCode": "def get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "backend.app.database",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASE_URL",
+        "kind": 5,
+        "importPath": "backend.app.database",
+        "description": "backend.app.database",
+        "peekOfCode": "DATABASE_URL = os.getenv(\n    \"DATABASE_URL\",\n    \"postgresql+psycopg2://agroforestry:agroforestry@localhost:5432/agroforestry\",\n)\nconnect_args = {\"check_same_thread\": False} if DATABASE_URL.startswith(\"sqlite\") else {}\nengine = create_engine(DATABASE_URL, connect_args=connect_args)\nSessionLocal = sessionmaker(bind=engine, autoflush=False, autocommit=False)\nclass Base(DeclarativeBase):\n    pass\ndef get_db():",
+        "detail": "backend.app.database",
+        "documentation": {}
+    },
+    {
+        "label": "connect_args",
+        "kind": 5,
+        "importPath": "backend.app.database",
+        "description": "backend.app.database",
+        "peekOfCode": "connect_args = {\"check_same_thread\": False} if DATABASE_URL.startswith(\"sqlite\") else {}\nengine = create_engine(DATABASE_URL, connect_args=connect_args)\nSessionLocal = sessionmaker(bind=engine, autoflush=False, autocommit=False)\nclass Base(DeclarativeBase):\n    pass\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:",
+        "detail": "backend.app.database",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "backend.app.database",
+        "description": "backend.app.database",
+        "peekOfCode": "engine = create_engine(DATABASE_URL, connect_args=connect_args)\nSessionLocal = sessionmaker(bind=engine, autoflush=False, autocommit=False)\nclass Base(DeclarativeBase):\n    pass\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "backend.app.database",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "kind": 5,
+        "importPath": "backend.app.database",
+        "description": "backend.app.database",
+        "peekOfCode": "SessionLocal = sessionmaker(bind=engine, autoflush=False, autocommit=False)\nclass Base(DeclarativeBase):\n    pass\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "backend.app.database",
+        "documentation": {}
+    },
+    {
+        "label": "get_meta",
+        "kind": 2,
+        "importPath": "backend.app.main",
+        "description": "backend.app.main",
+        "peekOfCode": "def get_meta(db: Session = Depends(get_db)) -> MetaOut:\n    species = db.scalars(select(Species).order_by(Species.id)).all()\n    # Machines store the species they suit as a JSON list of names, so count\n    # by name rather than via a foreign key. Placeholder machines are excluded.\n    counts: dict[str, int] = {}\n    rows = db.execute(\n        select(Machine.species)\n        .where(Machine.company.has(Company.name.notin_(PLACEHOLDER_COMPANIES)))\n    ).all()\n    for (names,) in rows:",
+        "detail": "backend.app.main",
+        "documentation": {}
+    },
+    {
+        "label": "list_machines",
+        "kind": 2,
+        "importPath": "backend.app.main",
+        "description": "backend.app.main",
+        "peekOfCode": "def list_machines(\n    operation: str = Query(..., pattern=\"^(planting|pruning|harvesting)$\"),\n    system_type: str = Query(..., pattern=\"^(silvoarable|silvopastoral)$\"),\n    company_type: int | None = Query(None, ge=1, le=3),\n    species: list[str] | None = Query(\n        None,\n        description=\"Species names. When given, only machines suitable for at \"\n                    \"least one of these species are returned (best matches first).\",\n    ),\n    db: Session = Depends(get_db),",
+        "detail": "backend.app.main",
+        "documentation": {}
+    },
+    {
+        "label": "get_machine",
+        "kind": 2,
+        "importPath": "backend.app.main",
+        "description": "backend.app.main",
+        "peekOfCode": "def get_machine(machine_id: int, db: Session = Depends(get_db)) -> MachineOut:\n    m = db.get(Machine, machine_id, options=[joinedload(Machine.company)])\n    if m is None:\n        raise HTTPException(status_code=404, detail=\"Machine not found\")\n    return MachineOut.model_validate(m)",
+        "detail": "backend.app.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "backend.app.main",
+        "description": "backend.app.main",
+        "peekOfCode": "app = FastAPI(title=\"Agroforestry API\", version=\"0.3.0\",\n              description=\"Agroforestry planning & machine selection — proof of concept\")\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=[\"http://localhost:5173\", \"http://127.0.0.1:5173\"],\n    allow_credentials=True,\n    allow_methods=[\"*\"],\n    allow_headers=[\"*\"],\n)\nallow_origins=os.environ.get(",
+        "detail": "backend.app.main",
+        "documentation": {}
+    },
+    {
+        "label": "SYSTEM_TYPES",
+        "kind": 5,
+        "importPath": "backend.app.main",
+        "description": "backend.app.main",
+        "peekOfCode": "SYSTEM_TYPES = [\n    {\"id\": \"silvoarable\", \"label\": \"Silvoarable\",\n     \"blurb\": \"Trees combined with crops.\"},\n    {\"id\": \"silvopastoral\", \"label\": \"Silvopastoral\",\n     \"blurb\": \"Trees combined with livestock.\"},\n]\nOPERATIONS = [\n    {\"id\": \"planting\", \"label\": \"Planting\", \"blurb\": \"Establish trees or transplant crops.\"},\n    {\"id\": \"pruning\", \"label\": \"Pruning\", \"blurb\": \"Formative cuts, hedging and crown lifting.\"},\n    {\"id\": \"harvesting\", \"label\": \"Harvesting\", \"blurb\": \"Pick, shake, sweep or lift the produce.\"},",
+        "detail": "backend.app.main",
+        "documentation": {}
+    },
+    {
+        "label": "OPERATIONS",
+        "kind": 5,
+        "importPath": "backend.app.main",
+        "description": "backend.app.main",
+        "peekOfCode": "OPERATIONS = [\n    {\"id\": \"planting\", \"label\": \"Planting\", \"blurb\": \"Establish trees or transplant crops.\"},\n    {\"id\": \"pruning\", \"label\": \"Pruning\", \"blurb\": \"Formative cuts, hedging and crown lifting.\"},\n    {\"id\": \"harvesting\", \"label\": \"Harvesting\", \"blurb\": \"Pick, shake, sweep or lift the produce.\"},\n]\n# Company types follow the research documents: manufacturers are segmented by\n# how much machine information they publish on their own website.\nCOMPANY_TYPES = [\n    {\"id\": \"1\", \"label\": \"Type 1 — Full information\",\n     \"blurb\": \"The manufacturer publishes complete machine information online: specifications and prices.\"},",
+        "detail": "backend.app.main",
+        "documentation": {}
+    },
+    {
+        "label": "COMPANY_TYPES",
+        "kind": 5,
+        "importPath": "backend.app.main",
+        "description": "backend.app.main",
+        "peekOfCode": "COMPANY_TYPES = [\n    {\"id\": \"1\", \"label\": \"Type 1 — Full information\",\n     \"blurb\": \"The manufacturer publishes complete machine information online: specifications and prices.\"},\n    {\"id\": \"2\", \"label\": \"Type 2 — Price on request\",\n     \"blurb\": \"Specifications are published, but the price is missing: contact the manufacturer or a dealer.\"},\n    {\"id\": \"3\", \"label\": \"Type 3 — Tailor-made solutions\",\n     \"blurb\": \"The manufacturer builds customized machines: specifications and price follow from a consultation.\"},\n]\n# Placeholder crop machines (not from the research documents) — hidden everywhere.\nPLACEHOLDER_COMPANIES = {",
+        "detail": "backend.app.main",
+        "documentation": {}
+    },
+    {
+        "label": "PLACEHOLDER_COMPANIES",
+        "kind": 5,
+        "importPath": "backend.app.main",
+        "description": "backend.app.main",
+        "peekOfCode": "PLACEHOLDER_COMPANIES = {\n    \"Checchi & Magli\", \"Ferrari Costruzioni Meccaniche\", \"Sfoggia\",\n    \"Grimme\", \"Guaresi\", \"ASA-LIFT\", \"Moty\",\n}\n@app.get(\"/api/meta\", response_model=MetaOut)\ndef get_meta(db: Session = Depends(get_db)) -> MetaOut:\n    species = db.scalars(select(Species).order_by(Species.id)).all()\n    # Machines store the species they suit as a JSON list of names, so count\n    # by name rather than via a foreign key. Placeholder machines are excluded.\n    counts: dict[str, int] = {}",
+        "detail": "backend.app.main",
+        "documentation": {}
+    },
+    {
+        "label": "Species",
+        "kind": 6,
+        "importPath": "backend.app.models",
+        "description": "backend.app.models",
+        "peekOfCode": "class Species(Base):\n    __tablename__ = \"species\"\n    id: Mapped[int] = mapped_column(Integer, primary_key=True)\n    name: Mapped[str] = mapped_column(String(60), unique=True, nullable=False)\n    category: Mapped[str] = mapped_column(String(20), nullable=False)  # tree | crop | livestock\nclass Company(Base):\n    __tablename__ = \"company\"\n    id: Mapped[int] = mapped_column(Integer, primary_key=True)\n    name: Mapped[str] = mapped_column(String(120), unique=True, nullable=False)\n    country: Mapped[str] = mapped_column(String(60), nullable=False)",
+        "detail": "backend.app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Company",
+        "kind": 6,
+        "importPath": "backend.app.models",
+        "description": "backend.app.models",
+        "peekOfCode": "class Company(Base):\n    __tablename__ = \"company\"\n    id: Mapped[int] = mapped_column(Integer, primary_key=True)\n    name: Mapped[str] = mapped_column(String(120), unique=True, nullable=False)\n    country: Mapped[str] = mapped_column(String(60), nullable=False)\n    website: Mapped[str] = mapped_column(Text, nullable=True)\n    machines: Mapped[list[\"Machine\"]] = relationship(back_populates=\"company\")\nclass Machine(Base):\n    __tablename__ = \"machine\"\n    id: Mapped[int] = mapped_column(Integer, primary_key=True)",
+        "detail": "backend.app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Machine",
+        "kind": 6,
+        "importPath": "backend.app.models",
+        "description": "backend.app.models",
+        "peekOfCode": "class Machine(Base):\n    __tablename__ = \"machine\"\n    id: Mapped[int] = mapped_column(Integer, primary_key=True)\n    name: Mapped[str] = mapped_column(String(160), nullable=False)\n    company_id: Mapped[int] = mapped_column(ForeignKey(\"company.id\"), nullable=False)\n    operation: Mapped[str] = mapped_column(String(20), nullable=False)  # planting | pruning | harvesting\n    method: Mapped[str] = mapped_column(String(30), nullable=False)  # manual | mechanical | platform-assisted\n    # Company type per the research documents (data transparency):\n    # 1 = published specs + prices, 2 = price on request, 3 = custom built / consultation\n    company_type: Mapped[int] = mapped_column(Integer, nullable=False)",
+        "detail": "backend.app.models",
+        "documentation": {}
+    },
+    {
+        "label": "SpeciesOut",
+        "kind": 6,
+        "importPath": "backend.app.schemas",
+        "description": "backend.app.schemas",
+        "peekOfCode": "class SpeciesOut(BaseModel):\n    model_config = ConfigDict(from_attributes=True)\n    id: int\n    name: str\n    category: str\n    machine_count: int = 0\nclass CompanyOut(BaseModel):\n    model_config = ConfigDict(from_attributes=True)\n    id: int\n    name: str",
+        "detail": "backend.app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "CompanyOut",
+        "kind": 6,
+        "importPath": "backend.app.schemas",
+        "description": "backend.app.schemas",
+        "peekOfCode": "class CompanyOut(BaseModel):\n    model_config = ConfigDict(from_attributes=True)\n    id: int\n    name: str\n    country: str\n    website: str | None\nclass MachineOut(BaseModel):\n    model_config = ConfigDict(from_attributes=True)\n    id: int\n    name: str",
+        "detail": "backend.app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "MachineOut",
+        "kind": 6,
+        "importPath": "backend.app.schemas",
+        "description": "backend.app.schemas",
+        "peekOfCode": "class MachineOut(BaseModel):\n    model_config = ConfigDict(from_attributes=True)\n    id: int\n    name: str\n    operation: str\n    method: str\n    company_type: int\n    system_types: list[str]\n    categories: list[str]\n    species: list[str]",
+        "detail": "backend.app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "MetaOut",
+        "kind": 6,
+        "importPath": "backend.app.schemas",
+        "description": "backend.app.schemas",
+        "peekOfCode": "class MetaOut(BaseModel):\n    system_types: list[dict]\n    operations: list[dict]\n    company_types: list[dict]\n    species: dict[str, list[SpeciesOut]]",
+        "detail": "backend.app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "run",
+        "kind": 2,
+        "importPath": "backend.app.seed",
+        "description": "backend.app.seed",
+        "peekOfCode": "def run() -> None:\n    Base.metadata.drop_all(engine)\n    Base.metadata.create_all(engine)\n    db = SessionLocal()\n    try:\n        for name, category in SPECIES:\n            db.add(Species(name=name, category=category))\n        companies: dict[str, Company] = {}\n        for m in MACHINES:\n            key = m[\"company\"]",
+        "detail": "backend.app.seed",
+        "documentation": {}
+    },
+    {
+        "label": "SPECIES",
+        "kind": 5,
+        "importPath": "backend.app.seed_data",
+        "description": "backend.app.seed_data",
+        "peekOfCode": "SPECIES = [\n    ('Apple', 'tree'),\n    ('Pear', 'tree'),\n    ('Walnut', 'tree'),\n    ('Sweet chestnut', 'tree'),\n    ('Poplar', 'tree'),\n    ('Tomato', 'crop'),\n    ('Potato', 'crop'),\n    ('Broccoli', 'crop'),\n    ('Pumpkin', 'crop'),",
+        "detail": "backend.app.seed_data",
+        "documentation": {}
+    },
+    {
+        "label": "MACHINES",
+        "kind": 5,
+        "importPath": "backend.app.seed_data",
+        "description": "backend.app.seed_data",
+        "peekOfCode": "MACHINES = [\n    {'name': 'Egedal Type K tree planting machine', 'company': 'Egedal Maskinfabrik A/S', 'country': 'Denmark', 'operation': 'planting', 'method': 'mechanical', 'company_type': 1, 'system_types': ['silvoarable', 'silvopastoral'], 'categories': ['tree'], 'species': ['Apple', 'Pear'], 'description': 'Tractor-mounted tree planting / transplanter machine.', 'specs': {'model': 'Transplanter Type K', 'required tractor power': '≥ 45 HP (1-row) / 70–80 HP (multi-row)', 'working speed': '1 – 3 km/h', 'production capacity': '1,200–6,000+ plants/hour (multi-row)', 'row spacing': '90–165 cm', 'planting elements': '1–3 rows; gear-adjusted planting distance 60–170 cm', 'ditching width': 'Adjustable 90–165 cm row spacing'}, 'price_indication': '€17,221 (excl. VAT + shipping)', 'product_url': 'https://www.silvatrees.com/en/Egedal-planting-machine-Typ-K/99700007', 'image': 'egedal-type-k-tree-planting-machine.jpg', 'image_url': '/static/machines/egedal-type-k-tree-planting-machine.jpg'},\n    {'name': 'Jagoda DARIA universal tree planter', 'company': 'Jagoda JPS', 'country': 'Poland', 'operation': 'planting', 'method': 'mechanical', 'company_type': 1, 'system_types': ['silvoarable', 'silvopastoral'], 'categories': ['tree'], 'species': ['Apple', 'Pear'], 'description': '1-row universal tree planting machine.', 'specs': {'model': 'DARIA', 'required tractor power': '≥ 30 HP', 'working speed': '0.2–2.0 km/h', 'production capacity': '5,000–9,000 trees/day', 'row spacing': 'Up to 4 m', 'planting elements': 'Adjustable scrapers/press wheels', 'power source': 'Tractor 3-point linkage (Cat. 2)'}, 'price_indication': '€4,290', 'product_url': 'https://www.fermetech.eu/en/a/planting-machine-jagoda-daria', 'image': 'jagoda-daria-universal-tree-planter.jpg', 'image_url': '/static/machines/jagoda-daria-universal-tree-planter.jpg'},\n    {'name': 'Sanxian SX-100 tree spade transplanter', 'company': 'Xuzhou Sanxian Machinery Technology Co., Ltd.', 'country': 'China', 'operation': 'planting', 'method': 'mechanical', 'company_type': 1, 'system_types': ['silvoarable', 'silvopastoral'], 'categories': ['tree'], 'species': ['Apple', 'Pear'], 'description': 'Tree Spade Transplant / Tree Transplanter.', 'specs': {'model': 'SX-100', 'working speed': 'Efficient for nursery and orchard transplanting', 'production capacity': 'High for commercial tree relocation', 'power source': 'Hydraulic (skid steer / excavator / loader)', 'machine weight': '1,100 kg'}, 'price_indication': '€4,104.35', 'product_url': None, 'image': 'sanxian-sx-100-tree-spade-transplanter.jpg', 'image_url': '/static/machines/sanxian-sx-100-tree-spade-transplanter.jpg'},\n    {'name': 'Holland 1500 single-row transplanter', 'company': 'Holland Transplanter Company', 'country': 'United States', 'operation': 'planting', 'method': 'mechanical', 'company_type': 1, 'system_types': ['silvoarable', 'silvopastoral'], 'categories': ['tree'], 'species': ['Apple', 'Pear'], 'description': 'Single-row conventional transplanter machine.', 'specs': {'model': '1500 Single Row', 'required tractor power': 'Compatible with standard compact tractors', 'working speed': 'Field pace for precision planting', 'production capacity': 'High for vegetable, flower, and small tree seedlings', 'planting elements': 'Seats, footrest, plant box, scraper blade, spacing sprockets', 'power source': 'Tractor-drawn / towed', 'machine weight': 'Heavy-duty welded steel frame (exact shipping weight on request)'}, 'price_indication': '€3,270.66', 'product_url': None, 'image': 'holland-1500-single-row-transplanter.jpg', 'image_url': '/static/machines/holland-1500-single-row-transplanter.jpg'},\n    {'name': 'Mechanical Transplanter CT-4 / CT-5', 'company': 'Mechanical Transplanter Company', 'country': 'United States', 'operation': 'planting', 'method': 'mechanical', 'company_type': 1, 'system_types': ['silvoarable', 'silvopastoral'], 'categories': ['tree'], 'species': ['Apple', 'Pear'], 'description': 'Tractor-mounted tree transplanter.', 'specs': {'model': 'CT-4 / CT-5', 'required tractor power': 'Compatible with standard tractors', 'working speed': 'Field pace', 'production capacity': 'Reliable for orchards/nurseries', 'power source': 'Tractor-mounted', 'machine weight': '425 lbs (shipping weight)'}, 'price_indication': '€4,204.00', 'product_url': 'https://mechanicaltransplanter.com/pages/christmas-tree-transplanter', 'image': 'mechanical-transplanter-ct-4-ct-5.jpg', 'image_url': '/static/machines/mechanical-transplanter-ct-4-ct-5.jpg'},\n    {'name': 'Damcon PL-10 compact tree planter', 'company': 'Damcon BV', 'country': 'Netherlands', 'operation': 'planting', 'method': 'mechanical', 'company_type': 2, 'system_types': ['silvoarable', 'silvopastoral'], 'categories': ['tree'], 'species': ['Apple', 'Pear'], 'description': 'Compact tractor-mounted tree planting machine.', 'specs': {'model': 'PL-10', 'required tractor power': 'Suitable for compact tractors', 'working speed': 'Field pace for precision', 'production capacity': '4,000–5,000 plants/day (1-row); up to 16,000–20,000 (4-row)', 'planting elements': 'Width options as above (transport-friendly)', 'power source': 'Tractor 3-point linkage (hydraulic)', 'machine weight': 'Varies by configuration (compact build)'}, 'price_indication': 'Price on request', 'product_url': 'https://www.damcon.com/machine/pl-10-compact-plant-machine/', 'image': 'damcon-pl-10-compact-tree-planter.jpg', 'image_url': '/static/machines/damcon-pl-10-compact-tree-planter.jpg'},\n    {'name': 'Northstar TP series tree planter', 'company': 'Northstar Attachments (via ProduceTech)', 'country': 'Canada', 'operation': 'planting', 'method': 'mechanical', 'company_type': 2, 'system_types': ['silvoarable', 'silvopastoral'], 'categories': ['tree'], 'species': ['Apple', 'Pear'], 'description': 'Heavy-duty rear-mounted tree planter.', 'specs': {'model': 'TP Series (Northstar Tree Planter)', 'required tractor power': '60–95 HP', 'working speed': 'Up to 500 trees per hour', 'production capacity': 'High productivity for orchards', 'power source': 'Tractor 3-point linkage (Cat. 1 & 2)', 'machine weight': 'Heavy-duty build'}, 'price_indication': 'Price on request', 'product_url': 'https://producetech.com/en/products/tree-planter/', 'image': 'northstar-tp-series-tree-planter.jpg', 'image_url': '/static/machines/northstar-tp-series-tree-planter.jpg'},\n    {'name': 'GVF tree planter', 'company': \"Gillison's Variety Fabrication (GVF)\", 'country': 'United States', 'operation': 'planting', 'method': 'mechanical', 'company_type': 2, 'system_types': ['silvoarable', 'silvopastoral'], 'categories': ['tree'], 'species': ['Apple', 'Pear'], 'description': 'Tractor 3-point tree planting machine.', 'specs': {'model': 'GVF Tree Planter', 'required tractor power': 'Lower HP than conventional planters', 'working speed': '300–500 trees per hour', 'production capacity': 'High for fruit orchards', 'power source': 'Tractor 3-point linkage', 'machine weight': 'Heavy-duty construction'}, 'price_indication': 'Price on request', 'product_url': 'https://gillisons.com/products/gvf-equipment/tree-planter/', 'image': 'gvf-tree-planter.jpg', 'image_url': '/static/machines/gvf-tree-planter.jpg'},\n    {'name': 'Blueline TP1000 tree planter', 'company': 'Blueline Manufacturing Co.', 'country': 'United States', 'operation': 'planting', 'method': 'mechanical', 'company_type': 2, 'system_types': ['silvoarable', 'silvopastoral'], 'categories': ['tree'], 'species': ['Apple', 'Pear'], 'description': 'Tractor-drawn tree planting machine.', 'specs': {'model': 'TP1000', 'required tractor power': 'Compatible with standard tractors', 'working speed': '3–4 times faster than manual planting', 'production capacity': 'High efficiency for orchards', 'power source': 'Tractor-drawn', 'machine weight': 'Heavy-duty build (contact for exact)'}, 'price_indication': 'Price on request', 'product_url': 'https://www.bluelinemfg.com/products/blueline-tree-planters', 'image': 'blueline-tp1000-tree-planter.jpg', 'image_url': '/static/machines/blueline-tp1000-tree-planter.jpg'},",
+        "detail": "backend.app.seed_data",
+        "documentation": {}
+    },
+    {
+        "label": "COMPANY_SITES",
+        "kind": 5,
+        "importPath": "backend.app.seed_data",
+        "description": "backend.app.seed_data",
+        "peekOfCode": "COMPANY_SITES = {\n    'Egedal Maskinfabrik A/S': 'https://www.egedal.dk',\n    'Jagoda JPS': 'https://jagodaharvester.com',\n    'Xuzhou Sanxian Machinery Technology Co., Ltd.': None,\n    'Holland Transplanter Company': 'https://www.transplanter.com',\n    'Mechanical Transplanter Company': 'https://mechanicaltransplanter.com',\n    'Damcon BV': 'https://www.damcon.com',\n    'Northstar Attachments (via ProduceTech)': 'https://www.producetech.com',\n    \"Gillison's Variety Fabrication (GVF)\": 'https://www.gillisons.com',\n    'Blueline Manufacturing Co.': 'https://www.bluelinemfg.com',",
+        "detail": "backend.app.seed_data",
+        "documentation": {}
+    }
+]

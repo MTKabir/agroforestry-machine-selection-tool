@@ -1,0 +1,16 @@
+# Starts only PostgreSQL. Run the API and frontend locally (see README).
+services:
+  db:
+    image: postgres:16
+    container_name: agroforestry-db
+    environment:
+      POSTGRES_USER: agroforestry
+      POSTGRES_PASSWORD: agroforestry
+      POSTGRES_DB: agroforestry
+    ports:
+      - "5432:5432"
+    volumes:
+      - agroforestry_pgdata:/var/lib/postgresql/data
+
+volumes:
+  agroforestry_pgdata:
