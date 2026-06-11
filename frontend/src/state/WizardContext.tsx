@@ -1,4 +1,4 @@
-import { createContext, useContext, useMemo, useState, type ReactNode } from "react";
+import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import type { Operation, SystemType } from "../types";
 
 export interface WizardState {
@@ -18,10 +18,36 @@ interface WizardApi extends WizardState {
 
 const empty: WizardState = { systemType: null, tree: null, partner: null, operation: null };
 
+const STORAGE_KEY = "agroforestry-wizard";
+
+function loadState(): WizardState {
+  try {
+    const raw = sessionStorage.getItem(STORAGE_KEY);
+    if (!raw) return empty;
+    const parsed = JSON.parse(raw);
+    return {
+      systemType: parsed.systemType ?? null,
+      tree: parsed.tree ?? null,
+      partner: parsed.partner ?? null,
+      operation: parsed.operation ?? null,
+    };
+  } catch {
+    return empty;
+  }
+}
+
 const Ctx = createContext<WizardApi | null>(null);
 
 export function WizardProvider({ children }: { children: ReactNode }) {
-  const [state, setState] = useState<WizardState>(empty);
+  const [state, setState] = useState<WizardState>(loadState);
+
+  useEffect(() => {
+    try {
+      sessionStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    } catch {
+      /* storage unavailable — wizard still works, just won't survive refresh */
+    }
+  }, [state]);
 
   const api = useMemo<WizardApi>(
     () => ({
@@ -31,7 +57,10 @@ export function WizardProvider({ children }: { children: ReactNode }) {
       setTree: (name) => setState((s) => ({ ...s, tree: name })),
       setPartner: (name) => setState((s) => ({ ...s, partner: name })),
       setOperation: (v) => setState((s) => ({ ...s, operation: v })),
-      reset: () => setState(empty),
+      reset: () => {
+        sessionStorage.removeItem(STORAGE_KEY);
+        setState(empty);
+      },
     }),
     [state]
   );
