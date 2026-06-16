@@ -59,7 +59,7 @@ export default function MachineCard({ machine, onDetails }: { machine: Machine; 
             </span>
           </div>
           <button className="btn btn-small" onClick={onDetails}>
-            View details →
+            View details 
           </button>
         </footer>
       </div>

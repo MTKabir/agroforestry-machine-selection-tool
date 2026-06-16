@@ -41,6 +41,14 @@ export default function MachinesStep() {
         All the machines for the selected operation of the selected species.
       </p>
 
+      {/* this is not needed for now {machines && machines.length > 0 && (
+        <div className="step-actions">
+          <button className="btn" onClick={() => navigate("/wizard/company")}>
+            Manufacturer segmentation
+          </button>
+        </div>
+      )} */}
+
       {error && <p className="error-note">{error}</p>}
       {!error && machines === null && <p className="loading-note">Loading machines…</p>}
       {machines && machines.length > 0 && tree && !machines.some((m) => m.species.includes(tree)) && (
@@ -49,7 +57,7 @@ export default function MachinesStep() {
           yet, so only machines for {partner ?? "your other selection"} are shown.
         </p>
       )}
-    
+
       {machines && machines.length === 0 && (
         <p className="empty-note">
           {tree === "Poplar" ? " — poplar has no machines yet" : ""}.
@@ -62,13 +70,6 @@ export default function MachinesStep() {
         ))}
       </div>
 
-      {machines && machines.length > 0 && (
-        <div className="step-actions">
-          <button className="btn" onClick={() => navigate("/wizard/company")}>
-            Continue to companies
-          </button>
-        </div>
-      )}
 
       {detail && <MachineDetail machine={detail} onClose={() => setDetail(null)} />}
     </section>

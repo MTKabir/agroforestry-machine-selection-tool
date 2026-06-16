@@ -3,10 +3,10 @@ import FieldPlan from "../components/FieldPlan";
 
 const STEPS = [
   ["Choose system", "Silvoarable or silvopastoral"],
-  ["Configure", "Trees + crops or livestock"],
+  ["Species combination", "Trees + crops or livestock"],
   ["Pick operation", "Planting, pruning, harvesting"],
   ["Browse machines", "Cards with full specs"],
-  ["See companies", "Grouped by data transparency"],
+  ["See manufacturers", "Grouped by data transparency"],
 ];
 
 export default function Landing() {
@@ -14,7 +14,6 @@ export default function Landing() {
     <div className="landing">
       <header className="topbar">
         <span className="wordmark">Agroforestry</span>
-        <Link to="/wizard/type" className="btn btn-small">Start planning</Link>
       </header>
 
       <section className="hero">
@@ -30,13 +29,12 @@ export default function Landing() {
             curated planting, pruning and harvesting equipment.
           </p>
           <div className="hero-actions">
-            <Link to="/wizard/type" className="btn">Start the planner</Link>
+            <Link to="/wizard/type" className="btn">Start the design tool</Link>
             <a href="#how" className="btn btn-ghost">How it works</a>
           </div>
           <ul className="hero-points">
-            <li>No account needed</li>
             <li>Real machinery from real manufacturers</li>
-            <li>Mobile-first, in 5 steps</li>
+            <li>Design in 5 steps</li>
           </ul>
         </div>
         <div className="hero-art">

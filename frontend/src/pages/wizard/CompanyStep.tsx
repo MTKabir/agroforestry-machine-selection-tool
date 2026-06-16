@@ -18,7 +18,7 @@ export default function CompanyStep({ meta }: { meta: Meta }) {
       systemType: systemType!,
       species: [tree, partner].filter(Boolean) as string[],
     })
-      .then(setMachines)
+      .then(setMachines) 
       .catch(() => setError("Could not load companies. Is the API running on port 8000?"));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [systemType, operation, tree, partner]);
@@ -27,9 +27,9 @@ export default function CompanyStep({ meta }: { meta: Meta }) {
 
   return (
     <section>
-      <h1>The companies behind your machines</h1>
+      <h1>The manufacturers behind your machines</h1>
       <p className="step-lede">
-        We segmented manufacturers by how much information they publish about their machines: full
+        We segmented manufacturers by how much information they publish about their machines on their websites: full
         information including price, full information without price, or tailor-made solutions
         defined in consultation.
       </p>

@@ -58,7 +58,7 @@ export default function MachineDetail({ machine, onClose }: { machine: Machine; 
             <span className="price big">{machine.price_indication ?? "Price unknown"}</span>
             {machine.product_url && (
               <a className="btn" href={machine.product_url} target="_blank" rel="noreferrer">
-                View product page ↗
+                View product page
               </a>
             )}
           </div>
